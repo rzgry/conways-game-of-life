@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conways Game Of Life</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>CONWAYS GAME OF LIFE</h1>
+    <div class="flex">
+      <canvas id="grid"></canvas>
+      <div id="controls">
+        <p><strong>The rules for a space that is populated:</strong></p>
+        <ul>
+          <li>Each cell with one or no neighbors dies, as if by solitude.</li>
+          <li>
+            Each cell with four or more neighbors dies, as if by overpopulation.
+          </li>
+          <li>Each cell with two or three neighbors survives.</li>
+        </ul>
+        <p><strong>The rules for a space that is unpopulated:</strong></p>
+        <ul>
+          <li>Each cell with three neighbors becomes populated.</li>
+        </ul>
+        <p>
+          More info:
+          <a
+            href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+            target="_blank"
+            >https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</a
+          >
+        </p>
+        <p id="iterations"></p>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
