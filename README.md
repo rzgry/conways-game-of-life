@@ -1,6 +1,8 @@
 # Conway's game of life
 
-Implementation of conway's game of life using and HTML canvas.
+https://conways-game-of-life-canvas.netlify.app
+
+Implementation of conway's game of life using JS and HTML canvas.
 
 Rules:
 
